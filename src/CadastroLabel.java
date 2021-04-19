@@ -63,25 +63,25 @@ public class CadastroLabel extends JPanel {
 			JLabel generoTexto = new JLabel("Genero");
 			generoTexto.setBounds(0,118,150,30);
 			generoTexto.setFont(new Font(null, Font.BOLD, 15));
-			genero = new JComboBox<>(new String[] {"Ação",
+			genero = new JComboBox<>(new String[] {"AÃ§Ã£o",
 					"Anime",
 					"Brasileiros",
-					"Clássicos",
-					"Comédia",
-					"Comédia stand-up",
+					"ClÃ¡ssicos",
+					"ComÃ©dia",
+					"ComÃ©dia stand-up",
 					"Comedia Dramatica",
 					"Comedia Romantica",
-					"Documentários",
+					"DocumentÃ¡rios",
 					"Drama",
 					"Esportes",
 					"Estrangeiros",
 					"Fantasia",
-					"Fé e espiritualidade",
-					"Ficção cientifica",
+					"FÃ© e espiritualidade",
+					"FicÃ§Ã£o cientifica",
 					"Hollywood",
 					"Independentes",
 					"LGBTQ",
-					"Música e musicais",
+					"MÃºsica e musicais",
 					"Policial",
 					"Premiados",
 					"Terror",
@@ -124,7 +124,7 @@ public class CadastroLabel extends JPanel {
 			assistido.setFont(new Font(null, Font.BOLD, 15));
 			botaoServico.add(assistido);
 			
-			JLabel avaliacao = new Titulos("Avaliação");
+			JLabel avaliacao = new Titulos("AvaliaÃ§Ã£o");
 			botaoServico.add(avaliacao);
 			starRater = new StarRater(5);
 			botaoServico.add(starRater);
@@ -144,7 +144,7 @@ public class CadastroLabel extends JPanel {
 				filme.setGenero((String)genero.getSelectedItem());
 				filme.setAssistido(assistido.isSelected());
 				filme.setAvaliacao(starRater.getSelection());
-				JOptionPane.showMessageDialog(null, "Você selecionou o titulo " + titulo.getText() + "\n Você selecionou a sinopse " + sinopse.getText() + "\n Você selecionou " + ondeAssistir.getSelection().getActionCommand() + " como serviço de stream"   );
+				JOptionPane.showMessageDialog(null, "VocÃª selecionou o titulo " + titulo.getText() + "\n VocÃª selecionou a sinopse " + sinopse.getText() + "\n VocÃª selecionou " + ondeAssistir.getSelection().getActionCommand() + " como serviÃ§o de stream"   );
 				System.out.println(filme);
 				}
 			});
@@ -185,13 +185,13 @@ public class CadastroLabel extends JPanel {
 					return false;
 				}
 				if(ondeAssistir.getSelection() == null) {
-					JOptionPane.showMessageDialog(null, "Selecione uma opção de serviço para assistir");
-					System.out.println("ERROR - Selecione uma opção de serviço para assistir");
+					JOptionPane.showMessageDialog(null, "Selecione uma opÃ§Ã£o de serviÃ§o para assistir");
+					System.out.println("ERROR - Selecione uma opÃ§Ã£o de serviÃ§o para assistir");
 					return false;
 				}
 				if(genero.getSelectedItem() == null) {
-					JOptionPane.showMessageDialog(null, "Selecione uma opção de genero");
-					System.out.println("ERROR - Selecione uma opção de genero");
+					JOptionPane.showMessageDialog(null, "Selecione uma opÃ§Ã£o de genero");
+					System.out.println("ERROR - Selecione uma opÃ§Ã£o de genero");
 					return false;
 				}
 				
