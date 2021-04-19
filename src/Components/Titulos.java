@@ -1,17 +1,17 @@
+package Components;
 
 import java.awt.Color;
 import java.awt.Font;
 
 import javax.swing.JLabel;
-import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
-public class Botoes extends JRadioButton{
+public class Titulos extends JLabel{
 	
 	private static final long serialVersionUID = 1L;
 	
 	
-	public Botoes(String texto) {
+	public Titulos(String texto) {
 		super(texto);
 		init();
 	}

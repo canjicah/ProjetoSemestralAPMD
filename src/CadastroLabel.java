@@ -17,6 +17,8 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 
+import Components.Servicos;
+
 public class CadastroLabel extends JPanel {
 	
 	private static final long serialVersionUID = 1L;
@@ -95,21 +97,23 @@ public class CadastroLabel extends JPanel {
 			botaoServico.setPreferredSize(new Dimension(170,100));
 			ondeAssistir = new ButtonGroup();
 			
-			JLabel  ondeAssistirTexto = new JLabel("Onde assistir");
-			ondeAssistirTexto.setFont(new Font(null, Font.BOLD, 15));
+			JLabel  ondeAssistirTexto = new Titulos("Onde assistir");
 			botaoServico.add(ondeAssistirTexto);
 			
-			JRadioButton netflix = new Botoes("Netflix");
+			JRadioButton netflix = new JRadioButton("Netflix");
+			setFont(new Font(null, Font.BOLD, 15));
 			netflix.setActionCommand("Netflix");
 			ondeAssistir.add(netflix);
 			botaoServico.add(netflix);
 			
-			JRadioButton primeVideo = new Botoes("Prime Video");
+			JRadioButton primeVideo = new JRadioButton("Prime Video");
+			setFont(new Font(null, Font.BOLD, 15));
 			primeVideo.setActionCommand("Prime Video");
 			ondeAssistir.add(primeVideo);
 			botaoServico.add(primeVideo);
 			
-			JRadioButton pirateBay = new Botoes("Pirate Bay");
+			JRadioButton pirateBay = new JRadioButton("Pirate Bay");
+			setFont(new Font(null, Font.BOLD, 15));
 			pirateBay.setActionCommand("Pirate Bay");
 			ondeAssistir.add(pirateBay);
 			botaoServico.add(pirateBay);
