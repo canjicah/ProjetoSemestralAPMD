@@ -99,20 +99,17 @@ public class CadastroLabel extends JPanel {
 			ondeAssistirTexto.setFont(new Font(null, Font.BOLD, 15));
 			botaoServico.add(ondeAssistirTexto);
 			
-			JRadioButton netflix = new JRadioButton("Netflix");
-			netflix.setFont(new Font(null, Font.BOLD, 15));
+			JRadioButton netflix = new Botoes("Netflix");
 			netflix.setActionCommand("Netflix");
 			ondeAssistir.add(netflix);
 			botaoServico.add(netflix);
 			
-			JRadioButton primeVideo = new JRadioButton("Prime Video");
-			primeVideo.setFont(new Font(null, Font.BOLD, 15));
+			JRadioButton primeVideo = new Botoes("Prime Video");
 			primeVideo.setActionCommand("Prime Video");
 			ondeAssistir.add(primeVideo);
 			botaoServico.add(primeVideo);
 			
-			JRadioButton pirateBay = new JRadioButton("Pirate Bay");
-			pirateBay.setFont(new Font(null, Font.BOLD, 15));
+			JRadioButton pirateBay = new Botoes("Pirate Bay");
 			pirateBay.setActionCommand("Pirate Bay");
 			ondeAssistir.add(pirateBay);
 			botaoServico.add(pirateBay);
@@ -121,8 +118,7 @@ public class CadastroLabel extends JPanel {
 			assistido.setFont(new Font(null, Font.BOLD, 15));
 			botaoServico.add(assistido);
 			
-			JLabel avaliacao = new JLabel("Avaliação");
-			avaliacao.setFont(new Font(null, Font.BOLD, 15));
+			JLabel avaliacao = new Titulos("Avaliação");
 			botaoServico.add(avaliacao);
 			starRater = new StarRater(5);
 			botaoServico.add(starRater);
