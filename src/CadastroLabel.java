@@ -18,6 +18,8 @@ import javax.swing.JTextField;
 import javax.swing.border.LineBorder;
 
 import Components.Servicos;
+import Components.StarRater;
+import Components.Titulos;
 
 public class CadastroLabel extends JPanel {
 	
@@ -165,7 +167,7 @@ public class CadastroLabel extends JPanel {
 		}
 		private JPanel Imagem() {
 			JPanel panel = new JPanel();
-			ImageIcon img = new ImageIcon(new ImageIcon("C:/Users/Canjicah/eclipse-workspace/teste/src/teste/iron_man.jpg").getImage().getScaledInstance(150, 180, Image.SCALE_AREA_AVERAGING));
+			ImageIcon img = new ImageIcon(new ImageIcon("src/iron_man.jpg").getImage().getScaledInstance(150, 180, Image.SCALE_AREA_AVERAGING));
 			JLabel imagem = new JLabel(img);
 			panel.add(imagem);
 			return panel;
